@@ -1,0 +1,84 @@
+.ticket-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-id {
+  color: #989898;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ticket-title h3 {
+  margin-top: 2px;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  background-color: #f4f5f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: relative;
+}
+
+.user-avatar.available {
+  background-color: #d4edda;
+}
+
+.user-avatar.unavailable {
+  background-color: #f8d7da;
+}
+
+.availability-indicator {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #28a745; /* Green for available */
+}
+
+.user-avatar.unavailable .availability-indicator {
+  background-color: #dc3545; /* Red for unavailable */
+}
+
+.ticket-title {
+  font-size: 16px;
+}
+
+.ticket-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.priority-tag,
+.feature-tag {
+  padding: 2px 8px;
+  color: #989898;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 0 2px#989898;
+}
+.circle-svg {
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+  background-color: #989898;
+  border-radius: 50%;
+  display: inline-flex;
+}
